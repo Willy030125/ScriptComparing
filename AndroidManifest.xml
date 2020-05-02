@@ -1,30 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:sharedUserId="com.webgenie.swfplay2.sharedID"
-    android:versionCode="7"
-    android:versionName="1.0.5"
+    android:sharedUserId="mobi.browser.flashfox.sharedID"
+    android:versionCode="2015460633"
+    android:versionName="45.5.1"
     android:installLocation="0"
-    package="com.webgenie.swfplay2"
+    package="mobi.browser.flashfox"
     platformBuildVersionCode="23"
-    platformBuildVersionName="6.0-2704002">
+    platformBuildVersionName="6.0-2438415">
 
     <uses-sdk
         android:minSdkVersion="9"
-        android:targetSdkVersion="22" />
-
-    <permission
-        android:name="com.webgenie.swfplay2_fxaccount.permission.PER_ACCOUNT_TYPE"
-        android:protectionLevel="0x2" />
-
-    <uses-permission
-        android:name="com.webgenie.swfplay2_fxaccount.permission.PER_ACCOUNT_TYPE" />
-
-    <uses-permission
-        android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-
-    <uses-permission
-        android:name="com.webgenie.swfplay2.permission.PER_ANDROID_PACKAGE" />
+        android:targetSdkVersion="23" />
 
     <uses-permission
         android:name="android.permission.GET_ACCOUNTS" />
@@ -54,8 +41,34 @@
         android:name="android.permission.READ_SYNC_SETTINGS" />
 
     <permission
-        android:name="com.webgenie.swfplay2.permission.PER_ANDROID_PACKAGE"
+        android:name="mobi.browser.flashfox_fxaccount.permission.PER_ACCOUNT_TYPE"
         android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="mobi.browser.flashfox_fxaccount.permission.PER_ACCOUNT_TYPE" />
+
+    <permission
+        android:name="mobi.browser.flashfox_sync.permission.PER_ACCOUNT_TYPE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="mobi.browser.flashfox_sync.permission.PER_ACCOUNT_TYPE" />
+
+    <permission
+        android:name="mobi.browser.flashfox.permission.PER_ANDROID_PACKAGE"
+        android:protectionLevel="0x2" />
+
+    <uses-permission
+        android:name="mobi.browser.flashfox.permission.PER_ANDROID_PACKAGE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.INTERNET" />
 
     <uses-permission
         android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -91,13 +104,13 @@
         android:name="android.permission.VIBRATE" />
 
     <uses-permission
-        android:name="com.webgenie.swfplay2.permissions.PASSWORD_PROVIDER" />
+        android:name="mobi.browser.flashfox.permissions.PASSWORD_PROVIDER" />
 
     <uses-permission
-        android:name="com.webgenie.swfplay2.permissions.BROWSER_PROVIDER" />
+        android:name="mobi.browser.flashfox.permissions.BROWSER_PROVIDER" />
 
     <uses-permission
-        android:name="com.webgenie.swfplay2.permissions.FORMHISTORY_PROVIDER" />
+        android:name="mobi.browser.flashfox.permissions.FORMHISTORY_PROVIDER" />
 
     <uses-permission
         android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
@@ -114,6 +127,9 @@
         android:name="android.hardware.touchscreen" />
 
     <uses-permission
+        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission
         android:name="android.permission.NFC" />
 
     <uses-feature
@@ -121,35 +137,75 @@
         android:required="false" />
 
     <uses-permission
-        android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+        android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature
+        android:name="android.hardware.audio.low_latency"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
 
     <uses-feature
         android:glEsVersion="0x20000"
         android:required="true" />
 
     <uses-permission
-        android:name="android.webkit.permission.PLUGIN" />
+        android:name="android.permission.INTERNET" />
 
-    <permission
-        android:name="com.webgenie.swfplay2.permissions.BROWSER_PROVIDER"
-        android:protectionLevel="0x2" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
-    <permission
-        android:name="com.webgenie.swfplay2.permissions.PASSWORD_PROVIDER"
-        android:protectionLevel="0x2" />
-
-    <permission
-        android:name="com.webgenie.swfplay2.permissions.FORMHISTORY_PROVIDER"
-        android:protectionLevel="0x2" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-permission
         android:name="com.google.android.c2dm.permission.RECEIVE" />
 
+    <uses-permission
+        android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission
+        android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA" />
+
+    <uses-permission
+        android:name="android.permission.GET_ACCOUNTS" />
+
+    <uses-permission
+        android:name="android.permission.GET_TASKS" />
+
+    <uses-permission
+        android:name="android.permission.VIBRATE" />
+
+    <uses-permission
+        android:name="android.permission.BLUETOOTH" />
+
     <application
-        android:label="@ref/0x7f090379"
-        android:icon="@ref/0x7f030000"
+        android:label="@ref/0x7f0b0129"
+        android:icon="@ref/0x7f02019b"
         android:name="org.mozilla.gecko.GeckoApplication"
+        android:debuggable="false"
         android:allowBackup="false"
+        android:logo="@ref/0x7f0201b2"
         android:hardwareAccelerated="true">
 
         <meta-data
@@ -158,22 +214,22 @@
 
         <meta-data
             android:name="com.google.android.gms.version"
-            android:value="@ref/0x7f0c000c" />
+            android:value="@ref/0x7f0c0000" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090379"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b0129"
             android:name="org.mozilla.gecko.BrowserApp"
             android:exported="true"
-            android:taskAffinity="com.webgenie.swfplay2.BROWSER"
+            android:taskAffinity="mobi.browser.flashfox.BROWSER"
             android:launchMode="2"
             android:configChanges="0x24b7"
             android:alwaysRetainTaskState="true"
             android:windowSoftInputMode="0x10" />
 
         <activity-alias
-            android:label="Webgenie SWF Player"
-            android:name="com.webgenie.swfplay2.App"
+            android:label="FlashFox"
+            android:name=".App"
             android:targetActivity="org.mozilla.gecko.BrowserApp">
 
             <intent-filter
@@ -197,11 +253,11 @@
 
             <meta-data
                 android:name="com.sec.minimode.icon.portrait.normal"
-                android:resource="@ref/0x7f020182" />
+                android:resource="@ref/0x7f02019b" />
 
             <meta-data
                 android:name="com.sec.minimode.icon.landscape.normal"
-                android:resource="@ref/0x7f020182" />
+                android:resource="@ref/0x7f02019b" />
 
             <intent-filter>
 
@@ -221,7 +277,7 @@
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2.helperBroadcastAction" />
+                    android:name="mobi.browser.flashfox.helperBroadcastAction" />
 
                 <data
                     android:scheme="moz-notification" />
@@ -251,7 +307,7 @@
                     android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:scheme="@string/0x28" />
+                    android:scheme="@string/0x29" />
 
                 <data
                     android:scheme="http" />
@@ -290,7 +346,7 @@
                     android:name="android.intent.category.DEFAULT" />
 
                 <data
-                    android:host="@string/0x28" />
+                    android:host="@string/0x29" />
 
                 <data
                     android:scheme="file" />
@@ -328,7 +384,7 @@
             android:name="org.mozilla.gecko.GeckoService" />
 
         <activity
-            android:theme="@ref/0x7f0b011d"
+            android:theme="@ref/0x7f0d0230"
             android:name="org.mozilla.gecko.trackingprotection.TrackingProtectionPrompt"
             android:launchMode="1" />
 
@@ -336,15 +392,15 @@
             android:name="org.mozilla.gecko.tabqueue.TabQueueService" />
 
         <activity
-            android:theme="@ref/0x7f0b011d"
+            android:theme="@ref/0x7f0d0230"
             android:name="org.mozilla.gecko.tabqueue.TabQueuePrompt"
             android:launchMode="1" />
 
         <activity
-            android:theme="@ref/0x7f0b0136"
-            android:label="Webgenie SWF Player"
+            android:theme="@ref/0x7f0d0218"
+            android:label="FlashFox"
             android:name="org.mozilla.gecko.tabqueue.TabQueueDispatcher"
-            android:taskAffinity="com.webgenie.swfplay2.TABQUEUE"
+            android:taskAffinity="mobi.browser.flashfox.TABQUEUE"
             android:excludeFromRecents="true"
             android:launchMode="2">
 
@@ -457,11 +513,11 @@
         </receiver>
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.Webapp"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp"
+            android:process=":mobi.browser.flashfox.Webapp"
             android:taskAffinity="org.mozilla.gecko.WEBAPP"
             android:excludeFromRecents="true"
             android:launchMode="2"
@@ -469,8 +525,8 @@
             android:windowSoftInputMode="0x10" />
 
         <activity-alias
-            android:label="@ref/0x7f090350"
-            android:name="com.webgenie.swfplay2.Webapp"
+            android:label="@ref/0x7f0b038a"
+            android:name=".Webapp"
             android:targetActivity="org.mozilla.gecko.Webapp">
 
             <intent-filter>
@@ -487,1001 +543,1001 @@
         </activity-alias>
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp0"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp0"
+            android:process=":mobi.browser.flashfox.Webapp0"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp1"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp1"
+            android:process=":mobi.browser.flashfox.Webapp1"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp2"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp2"
+            android:process=":mobi.browser.flashfox.Webapp2"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp3"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp3"
+            android:process=":mobi.browser.flashfox.Webapp3"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp4"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp4"
+            android:process=":mobi.browser.flashfox.Webapp4"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp5"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp5"
+            android:process=":mobi.browser.flashfox.Webapp5"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp6"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp6"
+            android:process=":mobi.browser.flashfox.Webapp6"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp7"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp7"
+            android:process=":mobi.browser.flashfox.Webapp7"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp8"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp8"
+            android:process=":mobi.browser.flashfox.Webapp8"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp9"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp9"
+            android:process=":mobi.browser.flashfox.Webapp9"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp10"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp10"
+            android:process=":mobi.browser.flashfox.Webapp10"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp11"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp11"
+            android:process=":mobi.browser.flashfox.Webapp11"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp12"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp12"
+            android:process=":mobi.browser.flashfox.Webapp12"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp13"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp13"
+            android:process=":mobi.browser.flashfox.Webapp13"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp14"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp14"
+            android:process=":mobi.browser.flashfox.Webapp14"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp15"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp15"
+            android:process=":mobi.browser.flashfox.Webapp15"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp16"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp16"
+            android:process=":mobi.browser.flashfox.Webapp16"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp17"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp17"
+            android:process=":mobi.browser.flashfox.Webapp17"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp18"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp18"
+            android:process=":mobi.browser.flashfox.Webapp18"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp19"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp19"
+            android:process=":mobi.browser.flashfox.Webapp19"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp20"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp20"
+            android:process=":mobi.browser.flashfox.Webapp20"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp21"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp21"
+            android:process=":mobi.browser.flashfox.Webapp21"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp22"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp22"
+            android:process=":mobi.browser.flashfox.Webapp22"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp23"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp23"
+            android:process=":mobi.browser.flashfox.Webapp23"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp24"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp24"
+            android:process=":mobi.browser.flashfox.Webapp24"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp25"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp25"
+            android:process=":mobi.browser.flashfox.Webapp25"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp26"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp26"
+            android:process=":mobi.browser.flashfox.Webapp26"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp27"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp27"
+            android:process=":mobi.browser.flashfox.Webapp27"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp28"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp28"
+            android:process=":mobi.browser.flashfox.Webapp28"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp29"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp29"
+            android:process=":mobi.browser.flashfox.Webapp29"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp30"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp30"
+            android:process=":mobi.browser.flashfox.Webapp30"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp31"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp31"
+            android:process=":mobi.browser.flashfox.Webapp31"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp32"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp32"
+            android:process=":mobi.browser.flashfox.Webapp32"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp33"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp33"
+            android:process=":mobi.browser.flashfox.Webapp33"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp34"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp34"
+            android:process=":mobi.browser.flashfox.Webapp34"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp35"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp35"
+            android:process=":mobi.browser.flashfox.Webapp35"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp36"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp36"
+            android:process=":mobi.browser.flashfox.Webapp36"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp37"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp37"
+            android:process=":mobi.browser.flashfox.Webapp37"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp38"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp38"
+            android:process=":mobi.browser.flashfox.Webapp38"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp39"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp39"
+            android:process=":mobi.browser.flashfox.Webapp39"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp40"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp40"
+            android:process=":mobi.browser.flashfox.Webapp40"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp41"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp41"
+            android:process=":mobi.browser.flashfox.Webapp41"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp42"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp42"
+            android:process=":mobi.browser.flashfox.Webapp42"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp43"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp43"
+            android:process=":mobi.browser.flashfox.Webapp43"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp44"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp44"
+            android:process=":mobi.browser.flashfox.Webapp44"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp45"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp45"
+            android:process=":mobi.browser.flashfox.Webapp45"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp46"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp46"
+            android:process=":mobi.browser.flashfox.Webapp46"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp47"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp47"
+            android:process=":mobi.browser.flashfox.Webapp47"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp48"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp48"
+            android:process=":mobi.browser.flashfox.Webapp48"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp49"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp49"
+            android:process=":mobi.browser.flashfox.Webapp49"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp50"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp50"
+            android:process=":mobi.browser.flashfox.Webapp50"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp51"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp51"
+            android:process=":mobi.browser.flashfox.Webapp51"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp52"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp52"
+            android:process=":mobi.browser.flashfox.Webapp52"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp53"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp53"
+            android:process=":mobi.browser.flashfox.Webapp53"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp54"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp54"
+            android:process=":mobi.browser.flashfox.Webapp54"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp55"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp55"
+            android:process=":mobi.browser.flashfox.Webapp55"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp56"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp56"
+            android:process=":mobi.browser.flashfox.Webapp56"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp57"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp57"
+            android:process=":mobi.browser.flashfox.Webapp57"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp58"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp58"
+            android:process=":mobi.browser.flashfox.Webapp58"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp59"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp59"
+            android:process=":mobi.browser.flashfox.Webapp59"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp60"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp60"
+            android:process=":mobi.browser.flashfox.Webapp60"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp61"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp61"
+            android:process=":mobi.browser.flashfox.Webapp61"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp62"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp62"
+            android:process=":mobi.browser.flashfox.Webapp62"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp63"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp63"
+            android:process=":mobi.browser.flashfox.Webapp63"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp64"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp64"
+            android:process=":mobi.browser.flashfox.Webapp64"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp65"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp65"
+            android:process=":mobi.browser.flashfox.Webapp65"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp66"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp66"
+            android:process=":mobi.browser.flashfox.Webapp66"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp67"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp67"
+            android:process=":mobi.browser.flashfox.Webapp67"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp68"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp68"
+            android:process=":mobi.browser.flashfox.Webapp68"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp69"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp69"
+            android:process=":mobi.browser.flashfox.Webapp69"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp70"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp70"
+            android:process=":mobi.browser.flashfox.Webapp70"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp71"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp71"
+            android:process=":mobi.browser.flashfox.Webapp71"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp72"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp72"
+            android:process=":mobi.browser.flashfox.Webapp72"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp73"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp73"
+            android:process=":mobi.browser.flashfox.Webapp73"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp74"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp74"
+            android:process=":mobi.browser.flashfox.Webapp74"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp75"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp75"
+            android:process=":mobi.browser.flashfox.Webapp75"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp76"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp76"
+            android:process=":mobi.browser.flashfox.Webapp76"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp77"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp77"
+            android:process=":mobi.browser.flashfox.Webapp77"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp78"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp78"
+            android:process=":mobi.browser.flashfox.Webapp78"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp79"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp79"
+            android:process=":mobi.browser.flashfox.Webapp79"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp80"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp80"
+            android:process=":mobi.browser.flashfox.Webapp80"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp81"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp81"
+            android:process=":mobi.browser.flashfox.Webapp81"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp82"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp82"
+            android:process=":mobi.browser.flashfox.Webapp82"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp83"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp83"
+            android:process=":mobi.browser.flashfox.Webapp83"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp84"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp84"
+            android:process=":mobi.browser.flashfox.Webapp84"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp85"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp85"
+            android:process=":mobi.browser.flashfox.Webapp85"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp86"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp86"
+            android:process=":mobi.browser.flashfox.Webapp86"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp87"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp87"
+            android:process=":mobi.browser.flashfox.Webapp87"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp88"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp88"
+            android:process=":mobi.browser.flashfox.Webapp88"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp89"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp89"
+            android:process=":mobi.browser.flashfox.Webapp89"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp90"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp90"
+            android:process=":mobi.browser.flashfox.Webapp90"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp91"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp91"
+            android:process=":mobi.browser.flashfox.Webapp91"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp92"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp92"
+            android:process=":mobi.browser.flashfox.Webapp92"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp93"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp93"
+            android:process=":mobi.browser.flashfox.Webapp93"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp94"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp94"
+            android:process=":mobi.browser.flashfox.Webapp94"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp95"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp95"
+            android:process=":mobi.browser.flashfox.Webapp95"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp96"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp96"
+            android:process=":mobi.browser.flashfox.Webapp96"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp97"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp97"
+            android:process=":mobi.browser.flashfox.Webapp97"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp98"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp98"
+            android:process=":mobi.browser.flashfox.Webapp98"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f090350"
+            android:theme="@ref/0x7f0d022e"
+            android:label="@ref/0x7f0b038a"
             android:name="org.mozilla.gecko.webapp.Webapps$Webapp99"
             android:exported="true"
-            android:process=":com.webgenie.swfplay2.Webapp99"
+            android:process=":mobi.browser.flashfox.Webapp99"
             android:launchMode="1"
             android:configChanges="0x4b3"
             android:windowSoftInputMode="0x10" />
@@ -1497,13 +1553,13 @@
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2.CHECK_UPDATE_RESULT" />
+                    android:name="mobi.browser.flashfox.CHECK_UPDATE_RESULT" />
             </intent-filter>
         </receiver>
 
         <receiver
             android:name="org.mozilla.gecko.GeckoMessageReceiver"
-            android:permission="com.webgenie.swfplay2.permissions.PASSWORD_PROVIDER">
+            android:permission="mobi.browser.flashfox.permissions.PASSWORD_PROVIDER">
 
             <intent-filter>
 
@@ -1526,16 +1582,16 @@
         <service
             android:name="org.mozilla.gecko.Restarter"
             android:exported="false"
-            android:process="com.webgenie.swfplay2.Restarter" />
+            android:process="mobi.browser.flashfox.Restarter" />
 
         <receiver
             android:name="org.mozilla.gecko.AlarmReceiver" />
 
         <activity
-            android:theme="@ref/0x7f0b0035"
-            android:label="@ref/0x7f090143"
+            android:theme="@ref/0x7f0d0166"
+            android:label="@ref/0x7f0b01bf"
             android:name="org.mozilla.gecko.fxa.activities.FxAccountStatusActivity"
-            android:taskAffinity="com.webgenie.swfplay2.FXA"
+            android:taskAffinity="mobi.browser.flashfox.FXA"
             android:clearTaskOnLaunch="true"
             android:configChanges="0x2004"
             android:windowSoftInputMode="0x10">
@@ -1549,7 +1605,7 @@
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2.ACTION_FXA_STATUS" />
+                    android:name="mobi.browser.flashfox.ACTION_FXA_STATUS" />
 
                 <category
                     android:name="android.intent.category.DEFAULT" />
@@ -1558,12 +1614,12 @@
 
         <receiver
             android:name="org.mozilla.gecko.fxa.receivers.FxAccountDeletedReceiver"
-            android:permission="com.webgenie.swfplay2_fxaccount.permission.PER_ACCOUNT_TYPE">
+            android:permission="mobi.browser.flashfox_fxaccount.permission.PER_ACCOUNT_TYPE">
 
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2_fxaccount.accounts.ACCOUNT_DELETED_ACTION" />
+                    android:name="mobi.browser.flashfox_fxaccount.accounts.ACCOUNT_DELETED_ACTION" />
             </intent-filter>
         </receiver>
 
@@ -1587,7 +1643,7 @@
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2.ACTION_FXA_GET_STARTED" />
+                    android:name="mobi.browser.flashfox.ACTION_FXA_GET_STARTED" />
 
                 <category
                     android:name="android.intent.category.DEFAULT" />
@@ -1601,7 +1657,7 @@
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2.ACTION_FXA_UPDATE_CREDENTIALS" />
+                    android:name="mobi.browser.flashfox.ACTION_FXA_UPDATE_CREDENTIALS" />
 
                 <category
                     android:name="android.intent.category.DEFAULT" />
@@ -1615,7 +1671,7 @@
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2.ACTION_FXA_FINISH_MIGRATING" />
+                    android:name="mobi.browser.flashfox.ACTION_FXA_FINISH_MIGRATING" />
 
                 <category
                     android:name="android.intent.category.DEFAULT" />
@@ -1629,57 +1685,17 @@
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2.ACTION_FXA_CONFIRM_ACCOUNT" />
+                    android:name="mobi.browser.flashfox.ACTION_FXA_CONFIRM_ACCOUNT" />
 
                 <category
                     android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
-        <provider
-            android:name="org.mozilla.gecko.background.healthreport.HealthReportProvider"
-            android:permission="com.webgenie.swfplay2.permissions.HEALTH_PROVIDER"
-            android:exported="false"
-            android:authorities="com.webgenie.swfplay2.health" />
-
-        <receiver
-            android:name="org.mozilla.gecko.background.healthreport.HealthReportExportedBroadcastReceiver"
-            android:exported="true">
-
-            <intent-filter>
-
-                <action
-                    android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-
-            <intent-filter>
-
-                <action
-                    android:name="android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE" />
-            </intent-filter>
-        </receiver>
-
-        <receiver
-            android:name="org.mozilla.gecko.background.healthreport.HealthReportBroadcastReceiver"
-            android:exported="false">
-
-            <intent-filter>
-
-                <action
-                    android:name="com.webgenie.swfplay2.HEALTHREPORT_UPLOAD_PREF" />
-            </intent-filter>
-
-            <intent-filter>
-
-                <action
-                    android:name="com.webgenie.swfplay2.HEALTHREPORT_PRUNE" />
-            </intent-filter>
-        </receiver>
-
         <activity
-            android:theme="@ref/0x7f0b000c"
-            android:label="@ref/0x7f0902f7"
-            android:icon="@ref/0x7f020182"
+            android:theme="@ref/0x7f0d0173"
+            android:label="@ref/0x7f0b0143"
+            android:icon="@ref/0x7f02019b"
             android:name="org.mozilla.gecko.sync.setup.activities.SetupSyncActivity"
             android:taskAffinity="org.mozilla.gecko.sync.setup"
             android:configChanges="0x4a0"
@@ -1693,35 +1709,35 @@
         </activity>
 
         <activity
-            android:theme="@ref/0x7f0b0116"
+            android:theme="@ref/0x7f0d022a"
             android:name="org.mozilla.gecko.sync.setup.activities.WebViewActivity" />
 
         <activity
-            android:theme="@ref/0x7f0b000c"
+            android:theme="@ref/0x7f0d0173"
             android:name="org.mozilla.gecko.sync.setup.activities.AccountActivity"
             android:clearTaskOnLaunch="true"
             android:windowSoftInputMode="0x12" />
 
         <activity
-            android:theme="@ref/0x7f0b000c"
+            android:theme="@ref/0x7f0d0173"
             android:name="org.mozilla.gecko.sync.setup.activities.RedirectToSetupActivity"
             android:clearTaskOnLaunch="true"
             android:windowSoftInputMode="0x12" />
 
         <activity
-            android:theme="@ref/0x7f0b000c"
+            android:theme="@ref/0x7f0d0173"
             android:name="org.mozilla.gecko.sync.setup.activities.SetupFailureActivity"
             android:excludeFromRecents="true"
             android:noHistory="true" />
 
         <activity
-            android:theme="@ref/0x7f0b000c"
+            android:theme="@ref/0x7f0d0173"
             android:name="org.mozilla.gecko.sync.setup.activities.SetupSuccessActivity"
             android:excludeFromRecents="true"
             android:noHistory="true" />
 
         <activity
-            android:theme="@ref/0x7f0b000c"
+            android:theme="@ref/0x7f0d0173"
             android:name="org.mozilla.gecko.sync.config.activities.SelectEnginesActivity"
             android:taskAffinity="org.mozilla.gecko.sync.setup"
             android:excludeFromRecents="true">
@@ -1748,21 +1764,21 @@
 
         <receiver
             android:name="org.mozilla.gecko.sync.receivers.SyncAccountDeletedReceiver"
-            android:permission="com.webgenie.swfplay2_sync.permission.PER_ACCOUNT_TYPE">
+            android:permission="mobi.browser.flashfox_sync.permission.PER_ACCOUNT_TYPE">
 
             <intent-filter>
 
                 <action
-                    android:name="com.webgenie.swfplay2_sync.accounts.SYNC_ACCOUNT_DELETED_ACTION" />
+                    android:name="mobi.browser.flashfox_sync.accounts.SYNC_ACCOUNT_DELETED_ACTION" />
             </intent-filter>
         </receiver>
 
         <activity
-            android:theme="@ref/0x7f0b005a"
-            android:label="@ref/0x7f0902bd"
-            android:icon="@ref/0x7f0201d4"
+            android:theme="@ref/0x7f0d017b"
+            android:label="@ref/0x7f0b0134"
+            android:icon="@ref/0x7f0201f9"
             android:name="org.mozilla.search.SearchActivity"
-            android:taskAffinity="com.webgenie.swfplay2.SEARCH"
+            android:taskAffinity="mobi.browser.flashfox.SEARCH"
             android:launchMode="1"
             android:configChanges="0x480">
 
@@ -1777,11 +1793,11 @@
 
             <meta-data
                 android:name="com.android.systemui.action_assist_icon"
-                android:resource="@ref/0x7f0c0006" />
+                android:resource="@ref/0x7f0c000f" />
         </activity>
 
         <receiver
-            android:label="@ref/0x7f0902c7"
+            android:label="@ref/0x7f0b013e"
             android:name="org.mozilla.search.SearchWidget">
 
             <intent-filter>
@@ -1810,14 +1826,14 @@
 
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@ref/0x7f070011" />
+                android:resource="@ref/0x7f060012" />
         </receiver>
 
         <activity
-            android:theme="@ref/0x7f0b005c"
-            android:label="@ref/0x7f0902c5"
+            android:theme="@ref/0x7f0d017c"
+            android:label="@ref/0x7f0b0138"
             android:name="org.mozilla.search.SearchPreferenceActivity"
-            android:logo="@ref/0x7f0201d4"
+            android:logo="@ref/0x7f0201f9"
             android:parentActivityName="org.mozilla.search.SearchActivity">
 
             <meta-data
@@ -1826,35 +1842,19 @@
         </activity>
 
         <activity
-            android:theme="@ref/0x7f0b0116"
-            android:label="@ref/0x7f0900a1"
-            android:icon="@ref/0x7f0200a3"
-            android:name="org.mozilla.gecko.CrashReporter"
-            android:exported="false"
-            android:process="com.webgenie.swfplay2.CrashReporter"
-            android:excludeFromRecents="true">
-
-            <intent-filter>
-
-                <action
-                    android:name="org.mozilla.gecko.reportCrash" />
-            </intent-filter>
-        </activity>
-
-        <activity
-            android:theme="@ref/0x7f0b0119"
+            android:theme="@ref/0x7f0d022f"
             android:name="org.mozilla.gecko.preferences.GeckoPreferences"
             android:excludeFromRecents="true"
             android:configChanges="0x2484" />
 
         <provider
             android:name="org.mozilla.gecko.db.BrowserProvider"
-            android:permission="com.webgenie.swfplay2.permissions.BROWSER_PROVIDER"
-            android:authorities="com.webgenie.swfplay2.db.browser" />
+            android:permission="mobi.browser.flashfox.permissions.BROWSER_PROVIDER"
+            android:authorities="mobi.browser.flashfox.db.browser" />
 
         <activity
-            android:theme="@ref/0x7f0b011d"
-            android:label="@ref/0x7f0901f6"
+            android:theme="@ref/0x7f0d0230"
+            android:label="@ref/0x7f0b023c"
             android:name="org.mozilla.gecko.overlays.ui.ShareDialog"
             android:launchMode="1"
             android:configChanges="0x2037"
@@ -1873,54 +1873,58 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="0xfb0" />
+
         <service
             android:name="org.mozilla.gecko.overlays.service.OverlayActionService" />
 
         <provider
-            android:label="@ref/0x7f090304"
+            android:label="@ref/0x7f0b0164"
             android:name="org.mozilla.gecko.db.PasswordsProvider"
-            android:permission="com.webgenie.swfplay2.permissions.PASSWORD_PROVIDER"
-            android:process="com.webgenie.swfplay2.PasswordsProvider"
-            android:authorities="com.webgenie.swfplay2.db.passwords" />
+            android:permission="mobi.browser.flashfox.permissions.PASSWORD_PROVIDER"
+            android:process="mobi.browser.flashfox.PasswordsProvider"
+            android:authorities="mobi.browser.flashfox.db.passwords" />
 
         <provider
-            android:label="@ref/0x7f090303"
+            android:label="@ref/0x7f0b0165"
             android:name="org.mozilla.gecko.db.FormHistoryProvider"
-            android:permission="com.webgenie.swfplay2.permissions.FORMHISTORY_PROVIDER"
+            android:permission="mobi.browser.flashfox.permissions.FORMHISTORY_PROVIDER"
             android:protectionLevel="0x2"
-            android:authorities="com.webgenie.swfplay2.db.formhistory" />
+            android:authorities="mobi.browser.flashfox.db.formhistory" />
 
         <provider
             android:name="org.mozilla.gecko.GeckoProfilesProvider"
-            android:authorities="com.webgenie.swfplay2.profiles" />
+            android:authorities="mobi.browser.flashfox.profiles" />
 
         <provider
-            android:label="@ref/0x7f090305"
+            android:label="@ref/0x7f0b0166"
             android:name="org.mozilla.gecko.db.TabsProvider"
-            android:permission="com.webgenie.swfplay2.permissions.BROWSER_PROVIDER"
-            android:authorities="com.webgenie.swfplay2.db.tabs" />
+            android:permission="mobi.browser.flashfox.permissions.BROWSER_PROVIDER"
+            android:authorities="mobi.browser.flashfox.db.tabs" />
 
         <provider
             android:name="org.mozilla.gecko.db.HomeProvider"
-            android:permission="com.webgenie.swfplay2.permissions.BROWSER_PROVIDER"
-            android:authorities="com.webgenie.swfplay2.db.home" />
+            android:permission="mobi.browser.flashfox.permissions.BROWSER_PROVIDER"
+            android:authorities="mobi.browser.flashfox.db.home" />
 
         <provider
-            android:label="@ref/0x7f090298"
+            android:label="@ref/0x7f0b0205"
             android:name="org.mozilla.gecko.db.ReadingListProvider"
-            android:permission="com.webgenie.swfplay2.permissions.BROWSER_PROVIDER"
+            android:permission="mobi.browser.flashfox.permissions.BROWSER_PROVIDER"
             android:exported="false"
-            android:authorities="com.webgenie.swfplay2.db.readinglist" />
+            android:authorities="mobi.browser.flashfox.db.readinglist" />
 
         <provider
             android:name="org.mozilla.gecko.db.SearchHistoryProvider"
-            android:permission="com.webgenie.swfplay2.permissions.BROWSER_PROVIDER"
-            android:authorities="com.webgenie.swfplay2.db.searchhistory" />
+            android:permission="mobi.browser.flashfox.permissions.BROWSER_PROVIDER"
+            android:authorities="mobi.browser.flashfox.db.searchhistory" />
 
         <service
             android:name="org.mozilla.gecko.updater.UpdateService"
             android:exported="false"
-            android:process="com.webgenie.swfplay2.UpdateService" />
+            android:process="mobi.browser.flashfox.UpdateService" />
 
         <service
             android:name="org.mozilla.gecko.NotificationService"
@@ -1928,6 +1932,10 @@
 
         <service
             android:name="org.mozilla.gecko.dlc.DownloadContentService"
+            android:exported="false" />
+
+        <service
+            android:name="org.mozilla.gecko.telemetry.TelemetryUploadService"
             android:exported="false" />
 
         <service
@@ -1942,7 +1950,7 @@
 
             <meta-data
                 android:name="android.accounts.AccountAuthenticator"
-                android:resource="@ref/0x7f070000" />
+                android:resource="@ref/0x7f060001" />
         </service>
 
         <service
@@ -1965,20 +1973,8 @@
 
             <meta-data
                 android:name="android.content.SyncAdapter"
-                android:resource="@ref/0x7f070003" />
+                android:resource="@ref/0x7f060004" />
         </service>
-
-        <service
-            android:name="org.mozilla.gecko.background.healthreport.HealthReportBroadcastService"
-            android:exported="false" />
-
-        <service
-            android:name="org.mozilla.gecko.background.healthreport.upload.HealthReportUploadService"
-            android:exported="false" />
-
-        <service
-            android:name="org.mozilla.gecko.background.healthreport.prune.HealthReportPruneService"
-            android:exported="false" />
 
         <service
             android:name="org.mozilla.gecko.sync.setup.SyncAuthenticatorService"
@@ -1992,7 +1988,7 @@
 
             <meta-data
                 android:name="android.accounts.AccountAuthenticator"
-                android:resource="@ref/0x7f070013" />
+                android:resource="@ref/0x7f060014" />
         </service>
 
         <service
@@ -2007,7 +2003,7 @@
 
             <meta-data
                 android:name="android.content.SyncAdapter"
-                android:resource="@ref/0x7f070015" />
+                android:resource="@ref/0x7f060016" />
         </service>
 
         <service
@@ -2040,58 +2036,110 @@
                     android:name="android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE" />
 
                 <action
-                    android:name="com.webgenie.swfplay2.STUMBLER_PREF" />
+                    android:name="mobi.browser.flashfox.STUMBLER_PREF" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:theme="@ref/0x7f0d000c"
+            android:label="Profile Details"
+            android:name="com.fillr.profile.FEMainActivity">
+
+            <intent-filter>
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="fillr" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:theme="@ref/0x7f0d0009"
+            android:label="List of Form Fields"
+            android:name="com.fillr.browsersdk.activity.FESDKMainActivity"
+            android:windowSoftInputMode="0x10"
+            android:noHistory="true" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAN9Lu3gaZSi6ajnO1P_jJ66ZlJx2HSLw8" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
             </intent-filter>
         </receiver>
 
         <service
-            android:name="com.webgenie.swfplayer.server.HttpService"
+            android:name="com.google.android.gms.analytics.AnalyticsService"
             android:enabled="true"
             android:exported="false" />
 
-        <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f0902b1"
-            android:name="com.webgenie.swfplayer.SampleBrowserActivity"
-            android:exported="true"
-            android:launchMode="2"
-            android:configChanges="0x2db7"
-            android:alwaysRetainTaskState="true"
-            android:windowSoftInputMode="0x10" />
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action
+                    android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
 
         <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f0900e5"
-            android:name="com.webgenie.swfplayer.FileBrowserActivity"
-            android:exported="true"
+            android:name="com.dropbox.core.android.AuthActivity"
             android:launchMode="2"
-            android:configChanges="0x2db7"
-            android:alwaysRetainTaskState="true"
-            android:windowSoftInputMode="0x10" />
+            android:configChanges="0x90">
 
-        <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f0900e5"
-            android:name="com.webgenie.swfplayer.SettingActivity"
-            android:exported="true"
-            android:launchMode="2"
-            android:configChanges="0x2db7"
-            android:alwaysRetainTaskState="true"
-            android:windowSoftInputMode="0x10" />
+            <intent-filter>
 
-        <activity
-            android:theme="@ref/0x7f0b0117"
-            android:label="@ref/0x7f0900e5"
-            android:name="com.webgenie.swfplayer.AboutUsActivity"
-            android:exported="true"
-            android:launchMode="2"
-            android:configChanges="0x2db7"
-            android:alwaysRetainTaskState="true"
-            android:windowSoftInputMode="0x10" />
+                <data
+                    android:scheme="db-zluoqacs49di6y2" />
+
+                <action
+                    android:name="android.intent.action.VIEW" />
+
+                <category
+                    android:name="android.intent.category.BROWSABLE" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <service
-            android:name="com.adobe.flashplayer.FlashPaintSurface"
-            android:process=":player">
+            android:name="com.fillr.service.DownloadSchemaService" />
+
+        <service
+            android:name="com.fillr.service.UserRegistrationService" />
+
+        <service
+            android:name="com.fillr.service.PerformanceStatsService" />
+
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService" />
+
+        <service
+            android:name="com.fillr.profile.ImportUserProfileService" />
+
+        <service
+            android:name="com.fillr.sync.ProfileSyncService" />
+
+        <service
+            android:name="com.adobe.flashplayer.FlashPaintSurface">
 
             <intent-filter>
 
@@ -2103,19 +2151,17 @@
                 android:name="type"
                 android:value="native" />
         </service>
-
-        <activity
-            android:theme="@ref/0x01030010"
-            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-            android:exported="false" />
-
-        <activity
-            android:theme="@ref/0x0103000f"
-            android:name="com.google.android.gms.ads.AdActivity"
-            android:configChanges="0xfb0" />
-
-        <activity
-            android:theme="@ref/0x7f0b01a9"
-            android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity" />
     </application>
+
+    <permission
+        android:name="mobi.browser.flashfox.permissions.BROWSER_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="mobi.browser.flashfox.permissions.PASSWORD_PROVIDER"
+        android:protectionLevel="0x2" />
+
+    <permission
+        android:name="mobi.browser.flashfox.permissions.FORMHISTORY_PROVIDER"
+        android:protectionLevel="0x2" />
 </manifest>
